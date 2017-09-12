@@ -1,0 +1,16 @@
+{
+  "presets": ["es2015", "flow"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "melinda-deduplication-common": "./melinda-deduplication-common"
+      }
+    }]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["rewire"]
+    }
+  }
+
+}
