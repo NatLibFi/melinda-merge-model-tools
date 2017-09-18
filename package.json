@@ -7,7 +7,8 @@
     "test": "npm run flow",
     "test:unit": "BABEL_ENV=test mocha --compilers js:babel-core/register \"melinda-deduplication-common/{,!(node_modules)/**/}*.spec.js\"",
     "test:watch": "npm run test:unit -- -w",
-    "flow": "flow"
+    "flow": "flow",
+    "display-items": "babel-node bin/display-items.js data-set"
   },
   "author": "Pasi Tuominen <pasi.tuominen@gmail.com>",
   "license": "ISC",
@@ -29,7 +30,10 @@
     "sinon": "^3.2.1"
   },
   "dependencies": {
+    "@natlibfi/marc-record-merge": "^3.1.0",
     "debug": "^2.6.8",
-    "lodash": "^4.17.4"
+    "jszip": "^3.1.4",
+    "lodash": "^4.17.4",
+    "marc-record-js": "^0.3.2"
   }
 }
